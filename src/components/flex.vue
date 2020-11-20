@@ -4,6 +4,12 @@
 </template>
 
 <script>
+	export default {
+		name: 'flex',
+		data() {
+			return {}
+		}
+	}
 </script>
 
 <style scoped>

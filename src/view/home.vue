@@ -19,15 +19,15 @@
 				</li>
 				<li class="roll">
 					<flex>OUT WORKS</flex>
-					<div class="content"></div>
+					<outworks></outworks>
 				</li>
-				<li class="roll">
+				<li class="roll services">
 					<flex>PRICING</flex>
-					<div class="content"></div>
+					<pricing></pricing>
 				</li>
 				<li class="roll">
 					<flex>OUR TEAM</flex>
-					<div class="content"></div>
+					<ourteam></ourteam>
 				</li>
 				<li class="roll">
 					<flex>CONTACT US</flex>
@@ -42,7 +42,10 @@
 	import Carousel from '../components/carousel.vue'
 	import Flex from '../components/flex.vue'
 	import Services from '../components/services.vue'
-	export default {
+	import Outworks from '../components/outWorks.vue'
+	import Pricing from '../components/pricing.vue'
+	import Ourteam from '../components/ourTeam.vue'
+ 	export default {
 		name: 'home',
 		data() {
 			return {
@@ -73,7 +76,10 @@
 		components:{
 			Carousel,
 			Flex,
-			Services
+			Services,
+			Outworks,
+			Pricing,
+			Ourteam
 		},
 		methods: {
 			scrollToPosition(i) {
@@ -95,6 +101,7 @@
 <style scoped>
 	.el-header {
 		height: 10vh !important;
+		padding: 0;
 	}
 	
 	.header {
@@ -145,6 +152,7 @@
 		justify-content: space-between;
 		list-style: none;
 		font-weight: bold;
+		font-size: 1.2vh;
 	}
 
 	.headerList li {
@@ -162,5 +170,9 @@
 
 	.services {
 		background-color: #F5F5F5;
+	}
+	
+	.roll {
+		overflow: hidden;
 	}
 </style>
