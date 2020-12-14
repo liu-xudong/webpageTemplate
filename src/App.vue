@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+	<!-- <span>1111</span> -->
     <!-- 路由占位符 -->
     <router-view></router-view>
   </div>
@@ -15,4 +16,7 @@ export default {
 
 <style>
 
+  #app {
+    height: 100vh;
+  }
 </style>

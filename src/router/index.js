@@ -2,16 +2,17 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../view/home.vue'
 import Login from '../view/login.vue'
+import Fist from '../components/Fist.vue'
 
 Vue.use(VueRouter)
 
 const routes = [{
 		path: '/',
-		redirect: '/home'
+		redirect: '/fist'
 	},
 	{
-		path: '/login',
-		component: Login
+		path: '/fist',
+		component: Fist
 	},
 	{
 		path: '/home',
@@ -25,6 +26,7 @@ const routes = [{
 
 const router = new VueRouter({
 	mode: 'history',
+  base: '/bir/',
 	routes
 })
 

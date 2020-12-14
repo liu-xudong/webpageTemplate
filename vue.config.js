@@ -6,7 +6,7 @@ module.exports = {
   // 指定子路径。比如，如果你的应用部署在
   // https://www.foobar.com/my-app/
   // 那么将这个值改为 `/my-app/`
-  publicPath: './',　　// 构建好的文件输出到哪里
+  publicPath: '/bir/',　　// 构建好的文件输出到哪里
 
   // 将构建好的文件输出到哪里（或者说将编译的文件）
   outputDir: 'dist',
@@ -24,7 +24,7 @@ module.exports = {
       // 输出文件
       filename: 'index.html',
       // 页面title
-      title: '后台管理系统'
+      title: '生日快乐'
     },
     // 简写格式
     // 模板文件默认是 `public/subpage.html`
